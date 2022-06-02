@@ -11,3 +11,7 @@
 .white {
   color: white;
 }
+
+.guess {
+  display: flex;
+}
