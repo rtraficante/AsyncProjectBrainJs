@@ -11,6 +11,7 @@ const purpleButton = document.getElementById("purple-button");
 const yellowButton = document.getElementById("yellow-button");
 const brownButton = document.getElementById("brown-button");
 const printButton = document.getElementById("print-button");
+const printArea = document.getElementById("print-area");
 
 let color;
 setRandomColor();
@@ -19,22 +20,22 @@ blueButton.addEventListener("click", () => {
   chooseColor(0);
 });
 greenButton.addEventListener("click", () => {
-  chooseColor(.143);
+  chooseColor(0.143);
 });
 redButton.addEventListener("click", () => {
-  chooseColor(.286);
+  chooseColor(0.286);
 });
 orangeButton.addEventListener("click", () => {
-  chooseColor(.429);
+  chooseColor(0.429);
 });
 pinkButton.addEventListener("click", () => {
-  chooseColor(.572);
+  chooseColor(0.572);
 });
 purpleButton.addEventListener("click", () => {
-  chooseColor(.715);
+  chooseColor(0.715);
 });
 yellowButton.addEventListener("click", () => {
-  chooseColor(.858);
+  chooseColor(0.858);
 });
 brownButton.addEventListener("click", () => {
   chooseColor(1);
@@ -53,7 +54,7 @@ function chooseColor(value) {
 }
 
 function print() {
-  console.log(JSON.stringify(data));
+  printArea.innerText = JSON.stringify(data);
 }
 
 function setRandomColor() {
